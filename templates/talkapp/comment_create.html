@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+コメント作成
+{% endblock %}
+
+{% block content %}
+{% include "error_message.html" %}
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <h1>コメント作成</h1>
+    <form action="/posts/{{ post_id }}/comments/store/" method="post">
+      <div class="form-group">
+        <label for="Message">メッセージ</label>
+        <textarea class="form-control" name="message" id="Message" rows="5" placeholder="Your Comment"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">送信</button>
+      {% csrf_token %}
+    </form>
+  </div>
+</div>
+{% endblock %}

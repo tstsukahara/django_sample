@@ -1,0 +1,24 @@
+Failed to import the site module
+Traceback (most recent call last):
+  File "/usr/local/var/pyenv/versions/anaconda3-2.5.0/lib/python3.5/site.py", line 72, in <module>
+    import os
+  File "/usr/local/var/pyenv/versions/anaconda3-2.5.0/lib/python3.5/os.py", line 57, in <module>
+    import posixpath as path
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 658, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 747, in get_code
+  File "<frozen importlib._bootstrap_external>", line 815, in get_data
+KeyboardInterrupt
+[20/Mar/2017 06:55:17] "GET /users/create/ HTTP/1.1" 200 3046
+[20/Mar/2017 06:55:17] "GET /static/css/mystyle.css HTTP/1.1" 304 0
+[20/Mar/2017 06:55:27] "GET /users/create/ HTTP/1.1" 200 3046
+[20/Mar/2017 06:55:29] "GET /users/create/ HTTP/1.1" 200 3046
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 20, 2017 - 06:54:58
+Django version 1.9.2, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
